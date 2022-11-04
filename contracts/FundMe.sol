@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-// 1. Pragma
+// 1. Pragma Section
 pragma solidity ^0.8.7;
-// 2. Imports
+// 2. Imports Section
 import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 import "./PriceConverter.sol";
 
-// 3. Interfaces, Libraries, Contracts
+// 3. Interfaces, Libraries, Contracts Section
 error FundMe__NotOwner();
 
 /**@title A sample Funding Contract
