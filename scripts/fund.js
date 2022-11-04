@@ -1,6 +1,7 @@
 const { ethers, getNamedAccounts } = require("hardhat")
 
 async function main() {
+  // deployer object
   const { deployer } = await getNamedAccounts()
   const fundMe = await ethers.getContract("FundMe", deployer)
   console.log(`Got contract FundMe at ${fundMe.address}`)
