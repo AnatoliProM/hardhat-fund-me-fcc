@@ -10,7 +10,6 @@ const { developmentChains } = require("../../helper-hardhat-config")
           let deployer
           const sendValue = ethers.utils.parseEther("1")
           beforeEach(async () => {
-              // const accounts = await ethers.getSigners()
               // deployer = accounts[0]
               deployer = (await getNamedAccounts()).deployer
               await deployments.fixture(["all"])
